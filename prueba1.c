@@ -18,7 +18,7 @@
 
 #define RESET "\x1b[0m"
 
-// Colores para el fondo de las letras en sistemas windows OS
+// Colores para el fondo de las letra en sistemas windows OS
 #define B_BLACK "\x1B[40m"
 #define B_RED "\x1B[41m"
 #define B_GREEN "\x1B[42m"
@@ -690,11 +690,11 @@ void EEmpres(char nombreEmpresa[], int telEmpres, char correEmpres[]) {
         gotoxy(30, 9);
         fflush(stdin); // Limpiar el buffer del teclado antes de leer
         fgets(nnombre, sizeof(nnombre), stdin);
-        nnombre[strcspn(nnombre, "\n")] = '\0'; // Eliminar el car·cter de nueva lÌnea
+        nnombre[strcspn(nnombre, "\n")] = '\0'; // Eliminar el car√°cter de nueva l√≠nea
 
         strcpy(nombreEmpresa, nnombre);
 
-        // Restricciones para el telÈfono
+        // Restricciones para el tel√©fono
         while (1) {
             gotoxy(30, 11);
             printf("Nuevo Telefono:");
